@@ -1,6 +1,6 @@
 'scopeName': 'source.singularity'
 'name': 'Singularity'
-'fileTypes': ['Singularity', 'def']
+'fileTypes': ['Singularity', 'def', 'Singularity.*']
 
 'patterns': [
   {
@@ -25,6 +25,12 @@
       '3':
         'name': 'keyword.control.singularity'
   }
+  {
+    'match': '(?i:^\\s*(osversion:)\\s.*?(.+?\\s(as)\\s.*)?)',
+    'captures':
+      '1':
+        'name': 'keyword.control.singularity'
+  } 
   {
     'match': '(?i:^\\s*(bootstrap:)\\s.*?(.+?\\s(as)\\s.*)?)',
     'captures':
