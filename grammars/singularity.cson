@@ -1,6 +1,6 @@
 'scopeName': 'source.singularity'
 'name': 'Singularity'
-'fileTypes': ['Singularity', 'def', 'Singularity.*']
+'fileTypes': ['Singularity', 'def']
 
 'patterns': [
   {
