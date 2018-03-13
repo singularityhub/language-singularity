@@ -1,6 +1,6 @@
 {
   "name": "language-singularity",
-  "version": "0.3.0",
+  "version": "0.0.1",
   "description": "Singularity syntax highlighting support for Atom",
   "engines": {
     "atom": "*"
