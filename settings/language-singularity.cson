@@ -1,0 +1,3 @@
+'.source.singularity':
+  'editor':
+    'commentStart': '# '

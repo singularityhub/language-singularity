@@ -1,0 +1,86 @@
+'scopeName': 'source.singularity'
+'name': 'Singularity'
+'fileTypes': ['Singularity', 'def']
+
+'patterns': [
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.singularity'
+  }
+  {
+    'begin': '\''
+    'end': '\''
+    'name': 'string.quoted.single.singularity'
+  }
+  {
+    'begin': '\"'
+    'end': '\"'
+    'name': 'string.quoted.double.singularity'
+  }
+  {
+    'match': '(?i:^\\s*(from:)\\s.*?(.+?\\s(as)\\s.*)?)',
+    'captures':
+      '1':
+        'name': 'keyword.control.singularity'
+      '3':
+        'name': 'keyword.control.singularity'
+  }
+  {
+    'match': '(?i:^\\s*(bootstrap:)\\s.*?(.+?\\s(as)\\s.*)?)',
+    'captures':
+      '1':
+        'name': 'keyword.control.singularity'
+  }
+  {
+    'match': '(?i:^\\s*(mirrorurl:)\\s.*?(.+?\\s(as)\\s.*)?)',
+    'captures':
+      '1':
+        'name': 'keyword.control.singularity'
+  }
+  {
+    'match': '(?i:^\\s*(cmd:)\\s.*?(.+?\\s(as)\\s.*)?)',
+    'captures':
+      '1':
+        'name': 'keyword.control.singularity'
+  }
+  {
+    'match': '(?i:^\\s*(%)(post|setup|environment|labels|test|runscript|files)\\s)'
+    'captures':
+      '0':
+        'name': 'keyword.control.singularity'
+      '1':
+        'name': 'keyword.other.special-method.singularity'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.quoted.double.singularity'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escaped.singularity'
+      }
+    ]
+  }
+  {
+    'begin': '\''
+    'end': '\''
+    'name': 'string.quoted.single.singularity'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escaped.singularity'
+      }
+    ]
+  }
+  {
+      'match': '(?m)\\\\$'
+      'captures':
+        '0':
+            'name': 'keyword.control.singularity'
+  }
+  {
+    'match': '^\\s*#.*$'
+    'name': 'comment.block.singularity'
+  }
+]
