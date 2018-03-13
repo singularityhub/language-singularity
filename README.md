@@ -1,9 +1,9 @@
 # Singularity Language
 
 This repository provides a small package to help with syntax highlighting of
-Singularity recipe files in the Atom editor.
+Singularity recipe files in the Atom editor. The package is [published on apm](https://atom.io/packages/language-singularity) and can be updated as needed.
 
- -[Grammars](grammars): contains the definition of rules and highlights, with details provided below.
+ - [Grammars](grammars): contains the definition of rules and highlights, with details provided below.
  - [Settings](settings): additional settings 
 
 
