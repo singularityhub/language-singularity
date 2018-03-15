@@ -1,6 +1,9 @@
 'scopeName': 'source.singularity'
 'name': 'Singularity'
-'fileTypes': ['Singularity', 'def']
+'fileTypes': [
+    'Singularity'
+    'def'
+]
 
 'patterns': [
   {
@@ -26,6 +29,12 @@
         'name': 'keyword.control.singularity'
   }
   {
+    'match': '(?i:^\\s*(osversion:)\\s.*?(.+?\\s(as)\\s.*)?)',
+    'captures':
+      '1':
+        'name': 'keyword.control.singularity'
+  }
+  {
     'match': '(?i:^\\s*(bootstrap:)\\s.*?(.+?\\s(as)\\s.*)?)',
     'captures':
       '1':
@@ -44,7 +53,7 @@
         'name': 'keyword.control.singularity'
   }
   {
-    'match': '(?i:^\\s*(%)(post|setup|environment|labels|test|runscript|files)\\s)'
+    'match': '(?i:^\\s*(%)(post|setup|environment|help|labels|test|runscript|files)\\s)'
     'captures':
       '0':
         'name': 'keyword.control.singularity'
