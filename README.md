@@ -6,10 +6,12 @@ Singularity recipe files in the Atom editor. The package is [published on apm](h
  - [Grammars](grammars): contains the definition of rules and highlights, with details provided below.
  - [Settings](settings): additional settings 
 
-
-The files that are "sniffed" and determined to be Singularity include "Singularity" in
-the name or (less common) end with `.def`. The syntax is fairly simple thus far, and
-looks like this:
+Note that for files that are named `Singularity.*` (with a Singularity prefix and a custom
+extension to indicate a tag) the highlighter is activated on save, or on change
+of the title. The others that are named just `Singularity` or end in `.def` are
+rendered on load. Thus, if you open a file called `Singularity.<extension>` and
+it doesn't highlight right away, just save it and it will trigger the event.
+The syntax is fairly simple thus far, and looks like this:
 
 ![img/example-singularity.png](img/example-singularity.png)
 
