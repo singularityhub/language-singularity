@@ -53,7 +53,15 @@
         'name': 'keyword.control.singularity'
   }
   {
-    'match': '(?i:^\\s*(%)(post|setup|environment|help|labels|test|runscript|files)\\s)'
+    'match': '(?i:^\\s*(%)(post|setup|environment|help|labels|test|runscript|files|startscript)\\s)'
+    'captures':
+      '0':
+        'name': 'keyword.control.singularity'
+      '1':
+        'name': 'keyword.other.special-method.singularity'
+  }
+  {
+    'match': '(?i:^\\s*(%)(app(?:install|help|run|labels|env|test|files)))'
     'captures':
       '0':
         'name': 'keyword.control.singularity'
