@@ -47,7 +47,7 @@
         'name': 'keyword.control.singularity'
   }
   {
-    'match': '(?i:^\\s*(cmd:)\\s.*?(.+?\\s(as)\\s.*)?)',
+    'match': '(?i:^\\s*((?:include)?cmd:)\\s.*?(.+?\\s(as)\\s.*)?)',
     'captures':
       '1':
         'name': 'keyword.control.singularity'
